@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sticky Notes - DearMe</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="study-reset.html">Study Reset</a></li>
+      <li><a href="sticky-notes.html" class="active">Sticky Notes</a></li>
+      <li><a href="fun-corner.html">Fun Corner</a></li>
+      <li><a href="journal.html">Journal</a></li>
+    </ul>
+  </nav>
+  <main>
+    <h1>Sticky Notes from DearMe</h1>
+    <p>Little reminders you might need today:</p>
+    <ul id="defaultNotes">
+      <li>“You’re allowed to pause without guilt.”</li>
+      <li>“Being confused doesn’t mean you’re failing.”</li>
+      <li>“You’re doing better than you think.”</li>
+    </ul>
+    <button onclick="showMoreNotes()">More Notes</button>
+    <div id="moreNotes" style="display:none;">
+      <ul>
+        <li>“Take one thing at a time.”</li>
+        <li>“Rest is productive too.”</li>
+        <li>“Your progress is real.”</li>
+      </ul>
+    </div>
+    <section>
+      <h2>Your Own Notes</h2>
+      <textarea id="noteInput" placeholder="Type your note here..."></textarea>
+      <button onclick="saveNote()">Save Note</button>
+      <ul id="savedNotes"></ul>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

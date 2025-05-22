@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Study Reset Zone - DearMe</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="study-reset.html" class="active">Study Reset</a></li>
+      <li><a href="sticky-notes.html">Sticky Notes</a></li>
+      <li><a href="fun-corner.html">Fun Corner</a></li>
+      <li><a href="journal.html">Journal</a></li>
+    </ul>
+  </nav>
+  <main>
+    <h1>Study Reset Zone</h1>
+    <p>Feeling burnt out? Try these mini reset tools to refresh your mind:</p>
+    <section>
+      <h2>Calming Sounds</h2>
+      <button onclick="playCalmingSound()">Play 5-min Calming Sound</button>
+    </section>
+    <section>
+      <h2>Pomodoro Timer</h2>
+      <p id="timerDisplay">25:00</p>
+      <button onclick="startTimer()">Start Timer</button>
+      <button onclick="resetTimer()">Reset Timer</button>
+      <div id="successAnimation" style="display: none;">✔ Time's up!</div>
+    </section>
+    <section>
+      <h2>Productivity Tip</h2>
+      <button onclick="showTip()">Get a Tip</button>
+      <p id="tipText"></p>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DearMe Journal</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="study-reset.html">Study Reset</a></li>
+      <li><a href="sticky-notes.html">Sticky Notes</a></li>
+      <li><a href="fun-corner.html">Fun Corner</a></li>
+      <li><a href="journal.html" class="active">Journal</a></li>
+    </ul>
+  </nav>
+  <header class="hero">
+    <h1>DearMe – Journal</h1>
+    <p class="subtitle">Write your heart out</p>
+  </header>
+  <main>
+    <textarea id="journalEntry" placeholder="Dear Me, today I..."></textarea>
+    <button onclick="saveJournal()">Save Entry</button>
+  </main>
+  <footer>
+    <p><a href="index.html">← Back to Home</a></p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
